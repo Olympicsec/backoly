@@ -12,20 +12,20 @@
     <title>Poora - Fundraising & Charity Template</title>
 
     <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon">
 
     <!-- ========== Start Stylesheet ========== -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="assets/css/themify-icons.css" rel="stylesheet" />
-    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
-    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
-    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
-    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
-    <link href="assets/css/animate.css" rel="stylesheet" />
-    <link href="assets/css/bootsnav.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/themify-icons.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/flaticon-set.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/magnific-popup.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/animate.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/bootsnav.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet" />
     <!-- ========== End Stylesheet ========== -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -119,7 +119,7 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo.png" class="logo" alt="Logo">
+                        <img src="{{ url_for('static', filename='img/logo.png') }}"  class="logo" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
@@ -188,7 +188,7 @@
 
     <!-- Start Breadcrumb 
     ============================================= -->
-    <div class="breadcrumb-area text-center shadow dark bg-fixed padding-xl text-light" style="background-image: url(assets/img/2440x1578.png);">
+    <div class="breadcrumb-area text-center shadow dark bg-fixed padding-xl text-light" style="background-image: url(static\img\2440x1578.png);">
         <div class="container">
             <div class="breadcrumb-items">
                 <div class="row">
@@ -213,7 +213,7 @@
             <div class="row align-center text-center">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="error-box">
-                        <img src="assets/img/illustration/1.png" alt="Thumb">
+                        <img src="{{ url_for('static', filename='img/illustration/1.png') }}" alt="Thumb">
                         <h2>Sorry Page Was Not Found!</h2>
                         <p>
                             Household shameless incommode at no objection behaviour. Especially do at he possession insensible sympathize boisterous regular inspiration.
@@ -231,7 +231,7 @@
     <footer class="bg-dark text-light">
         <!-- Fixed Shape -->
         <div class="fixed-shape">
-            <img src="assets/img/footer-bg.png" alt="Shape">
+            <img src="{{ url_for('static', filename='img/footer-bg.png') }}" alt="Shape">
         </div>
         <!-- Fixed Shape -->
         <div class="container">
@@ -239,7 +239,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 item">
                         <div class="f-item about">
-                            <img src="assets/img/logo-light.png" alt="Logo">
+                            <img src="{{ url_for('static', filename='img/logo-light.png') }}" alt="Logo">
                             <p>
                                 Happen active county. Winding morning am shyness evident to. Garrets because elderly new manners however one village she.
                             </p>
@@ -338,26 +338,26 @@
     </footer>
     <!-- End Footer -->
 
-    <!-- jQuery Frameworks
-    ============================================= -->
-    <script src="assets/js/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/equal-height.min.js"></script>
-    <script src="assets/js/jquery.appear.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/modernizr.custom.13711.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/progress-bar.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/count-to.js"></script>
-    <script src="assets/js/YTPlayer.min.js"></script>
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-    <script src="assets/js/bootsnav.js"></script>
-    <script src="assets/js/main.js"></script>
+
+    <!-- jQuery Frameworks -->
+    <script src="{{ url_for('static', filename='js/jquery-1.12.4.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/equal-height.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.appear.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/modernizr.custom.13711.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/progress-bar.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/count-to.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/YTPlayer.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootsnav.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 </body>
 </html>

@@ -1811,7 +1811,7 @@ body,
   content: "";
   height: 200%;
   width: 100%;
-  background: url(assets/img/shape/1.png);
+  background: url(img/shape/1.png);
   z-index: -1;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1871,7 +1871,7 @@ body,
   content: "";
   height: 100%;
   width: 100%;
-  background: url(assets/img/shape/2.png);
+  background: url(img/shape/2.png);
   background-size: contain;
   z-index: -1;
   background-repeat: no-repeat;
@@ -3066,7 +3066,7 @@ ul.pagination {
   content: "";
   height: 100%;
   width: 100%;
-  background: url(assets/img/shape/3.png);
+  background: url(img/shape/3.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -3075,21 +3075,21 @@ ul.pagination {
 }
 
 .we-do-area .single-item:first-child .item i::after {
-  background: url(assets/img/shape/4.png);
+  background: url(img/shape/4.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .we-do-area .single-item:nth-child(3n) .item i::after {
-  background: url(assets/img/shape/5.png);
+  background: url(img/shape/5.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .we-do-area .single-item:nth-child(4n) .item i::after {
-  background: url(assets/img/shape/6.png);
+  background: url(img/shape/6.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -3338,7 +3338,7 @@ ul.pagination {
   content: "";
   height: 100%;
   width: 100%;
-  background: url(assets/img/shape/brush.svg);
+  background: url(img/shape/brush.svg);
   background-size: cover;
   background-position: center bottom;
   z-index: 1;
@@ -4459,7 +4459,7 @@ ul.pagination {
   content: "";
   height: 100%;
   width: 100%;
-  background: url(assets/img/shape/3.png);
+  background: url(img/shape/3.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -4468,21 +4468,21 @@ ul.pagination {
 }
 
 .wedo-area .owl-item:first-child li i::after {
-  background: url(assets/img/shape/4.png);
+  background: url(img/shape/4.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .wedo-area .owl-item:nth-child(3n) li i::after {
-  background: url(assets/img/shape/5.png);
+  background: url(img/shape/5.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .wedo-area .owl-item:nth-child(4n) li i::after {
-  background: url(assets/img/shape/6.png);
+  background: url(img/shape/6.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -5002,7 +5002,7 @@ ul.pagination {
   content: "";
   height: 180px;
   width: 180px;
-  background: url(assets/img/shape/3.png);
+  background: url(img/shape/3.png);
   z-index: 1;
   border-radius: 50%;
   transition: all 0.35s ease-in-out;
@@ -6836,6 +6836,6 @@ footer.bg-dark .footer-bottom a {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background: url(assets/img/preloader.gif) center no-repeat #f9f9f9;
+  background: url(img/preloader.gif) center no-repeat #f9f9f9;
   text-align: center;
 }
