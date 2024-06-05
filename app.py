@@ -12,15 +12,15 @@ password = "admin"
 # Render pagina index
 @app.route('/')
 def index():
-    return render_template('index-3.html')
+    return render_template('index.html')
 
 @app.route('/mision')
 def mission():
-    return render_template('our-mission.html')
+    return render_template('mission.html')
 
 @app.route('/about')
 def about():
-    return render_template('about-us.html')
+    return render_template('aboutus.html')
 
 @app.route('/404')
 def error():
@@ -32,7 +32,7 @@ def contact():
 
 @app.route('/donacion')
 def donation():
-    return render_template('donation-1.html')
+    return render_template('donation1.html')
 
 @app.route('/donacion_singular')
 def donation_singular():

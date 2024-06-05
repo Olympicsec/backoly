@@ -9,7 +9,7 @@
     <meta name="description" content="Poora - Fundraising & Charity Template">
 
     <!-- ========== Page Title ========== -->
-    <title>Poora - Fundraising & Charity Template</title>
+    <title>Olympics EC</title>
 
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon">
@@ -53,10 +53,7 @@
                 <div class="col-lg-6 info">
                     <ul>
                         <li>
-                            <i class="fas fa-envelope-open"></i> Info@gmail.com
-                        </li>
-                        <li>
-                            <i class="fas fa-phone"></i> +123 456 7890
+                            <i class="fas fa-envelope-open"></i> olympicsecuador@gmail.com
                         </li>
                     </ul>
                 </div>
@@ -64,10 +61,10 @@
                     <div class="info">
                         <ul>
                             <li>
-                                <a href="#">Login</a>
+                                <a href="#">Iniciar Sesión</a>
                             </li>
                             <li>
-                                <a href="#">Register</a>
+                                <a href="#">Registrarse</a>
                             </li>
                         </ul>
                     </div>
@@ -80,7 +77,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-instagram"></i>
                                 </a>
                             </li>
                             <li>
@@ -97,6 +94,8 @@
     <!-- End Header Top -->
 
 
+
+
     <!-- Header 
     ============================================= -->
     <header id="home">
@@ -109,9 +108,9 @@
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav border-less">
                     <ul>
-                        <li class="button"><a href="#"><i class="fas fa-heart"></i> Donate</a></li>
+                        <li class="button"><a href="#"><i class="fas fa-heart"></i> Donar</a></li>
                     </ul>
-                </div>         
+                </div>        
                 <!-- End Atribute Navigation -->
 
                 <!-- Start Header Navigation -->
@@ -120,7 +119,7 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo.png" class="logo" alt="Logo">
+                        <img src="{{ url_for('static', filename='img/logo.png') }}"  class="logo" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
@@ -129,53 +128,27 @@
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Home</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="index.html">Home Version One</a></li>
-                                <li><a href="index-2.html">Home Version Two</a></li>
-                                <li><a href="index-3.html">Home Version Three</a></li>
-                                <li><a href="index-4.html">Home Version Four</a></li>
-                            </ul>
+                            <a href="index.html">Inicio</a>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Pages</a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Descubrir</a>
                             <ul class="dropdown-menu">
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="volunteer.html">Voluntter</a></li>
-                                <li><a href="our-mission.html">Our Mission</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="404.html">Error Page</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Donations</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="donation-1.html">Donations Version One</a></li>
-                                <li><a href="donation-2.html">Donations Version Two</a></li>
-                                <li><a href="donation-3.html">Donations Version Three</a></li>
-                                <li><a href="donation-single.html">Donations Single</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Event</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="event-1.html">Event Version One</a></li>
-                                <li><a href="event-2.html">Event Version Two</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Blog</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="blog-standard.html">Blog Standard</a></li>
-                                <li><a href="blog-with-sidebar.html">Blog With Sidebar</a></li>
-                                <li><a href="blog-2-colum.html">Blog Grid Two Colum</a></li>
-                                <li><a href="blog-3-colum.html">Blog Grid Three Colum</a></li>
-                                <li><a href="blog-single.html">Blog Single</a></li>
-                                <li><a href="blog-single-with-sidebar.html">Blog Single With Sidebar</a></li>
+                                <li><a href="aboutus.html">Sobre Nosotros</a></li>
+                                <li><a href="mission.html">Misión</a></li>
+                                <li><a href="funcion.html">Cómo funciona</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="contact.html">Contact</a>
+                            <a href="donation1.html">Campañas</a>
+                        </li>
+                        <li>
+                            <a href="Campaña.html">Iniciar Campaña</a>
+                        </li>
+                        <li>
+                            <a href="Sesion.html">Iniciar sesión</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contacto</a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -194,13 +167,13 @@
             <div class="breadcrumb-items">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2>Donations Single</h2>
+                        <h2>Campaña</h2>
                     </div>
                 </div>
                 <ul class="breadcrumb">
-                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="#">Donation</a></li>
-                    <li class="active">Single</li>
+                    <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="#">Campañas</a></li>
+                    <li class="active">Campaña</li>
                 </ul>
             </div>
         </div>
@@ -219,10 +192,10 @@
                             <img src="assets/img/1500x700.png" alt="Thumb">
                             <div class="top-entry">
                                 <div class="date">
-                                    <i class="fas fa-clock"></i> <strong>Created : </strong> Jul 15, 2020
+                                    <i class="fas fa-clock"></i> <strong>Creado : </strong> Jul 15, 2020
                                 </div>
                                 <div class="location">
-                                    <i class="fas fa-map-marker-alt"></i> <strong>Location : </strong>  Mombasa, Africa
+                                    <i class="fas fa-map-marker-alt"></i> <strong>Ubicación : </strong>  Quito, Ecuador
                                 </div>
                             </div>
                             <h4>Give Education To Africa</h4>
@@ -409,43 +382,30 @@
     ============================================= -->
     <footer class="bg-dark text-light">
         <!-- Fixed Shape -->
-        <div class="fixed-shape">
-            <img src="assets/img/footer-bg.png" alt="Shape">
-        </div>
-        <!-- Fixed Shape -->
         <div class="container">
             <div class="f-items default-padding">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 item">
                         <div class="f-item about">
                             <img src="assets/img/logo-light.png" alt="Logo">
-                            <p>
-                                Happen active county. Winding morning am shyness evident to. Garrets because elderly new manners however one village she.
-                            </p>
-                            <form action="#">
-                                <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                <button type="submit"> Subscribe</button>  
-                            </form>
+            
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 item">
                         <div class="f-item link">
-                            <h4 class="widget-title">Explore</h4>
+                            <h4 class="widget-title">Explora</h4>
                             <ul>
                                 <li>
-                                    <a href="#">Our Causes</a>
+                                    <a href="#">¿Qué es Crowdfundig?</a>
                                 </li>
                                 <li>
-                                    <a href="#">New Campaign</a>
+                                    <a href="#">Campañas Nuevas</a>
                                 </li>
                                 <li>
-                                    <a href="#">Site Map</a>
+                                    <a href="#">Donar</a>
                                 </li>
                                 <li>
-                                    <a href="#">Donate</a>
-                                </li>
-                                <li>
-                                    <a href="#">Terms</a>
+                                    <a href="#">Precios</a>
                                 </li>
                             </ul>
                         </div>
@@ -453,60 +413,45 @@
 
                     <div class="col-lg-3 col-md-6 item">
                         <div class="f-item">
-                            <h4 class="widget-title">Contact Info</h4>
+                            <h4 class="widget-title">Contacto</h4>
                             <div class="address">
                                 <ul>
                                     <li>
-                                        <strong>Address:</strong>
-                                        5919 Trussville Crossings Pkwy, Birmingham AL 35235
+                                        <strong>Dirección:</strong>
+                                        Quito, Ecuador
                                     </li>
                                     <li>
                                         <strong>Email:</strong>
-                                        <a href="mailto:info@validtheme.com">info@validtheme.com</a>
+                                        <a href="mailto:olympicsecuador@gmail.com">olympicsecuador@gmail.com</a>
                                     </li>
-                                    <li>
-                                        <strong>Phone:</strong>
-                                        <a href="tel:2151234567">+123 34598768</a>
-                                    </li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                </ul>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 item">
-                        <div class="f-item recent-post">
-                            <h4 class="widget-title">Latest News</h4>
-                            <div class="item">
-                                <a href="#">Delighted prevailed supported too not remainder perpetual.</a>
-                                <span><i class="fas fa-calendar-alt"></i> 22 Aug, 2020 -  <a href="#">Admin</a></span>
-                            </div>
-                            <div class="item">
-                                <a href="#">Speaking trifling an to unpacked moderate debating learnin management. </a>
-                                <span><i class="fas fa-calendar-alt"></i> 15 Nov, 2020 -  <a href="#">User</a></span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
         <!-- Start Footer Bottom -->
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>Copyright &copy;  2020. Designed by <a href="#">validtemplatess</a></p>
+                        <p>Copyright &copy;  2023. Olympics <a href="#"></a></p>
                     </div>
                     <div class="col-md-6 text-right link">
                         <ul>
                             <li>
-                                <a href="#">Terms</a>
+                                <a href="#">Términos</a>
                             </li>
                             <li>
-                                <a href="#">Privacy</a>
+                                <a href="#">Privacidad</a>
                             </li>
                             <li>
-                                <a href="#">Support</a>
+                                <a href="#">Soporte</a>
                             </li>
                         </ul>
                     </div>
