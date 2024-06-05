@@ -184,27 +184,32 @@
     ============================================= -->
     <div class="causes-single-area default-padding">
         <div class="container">
-            <div class="causes-single-items">
-                <div class="row">
-                    <div class="col-lg-8 content">
-
-                        <div class="info">
-                            <img src="assets/img/1500x700.png" alt="Thumb">
-                            <div class="top-entry">
-                                <div class="date">
-                                    <i class="fas fa-clock"></i> <strong>Creado : </strong> Jul 15, 2020
-                                </div>
-                                <div class="location">
-                                    <i class="fas fa-map-marker-alt"></i> <strong>Ubicación : </strong>  Quito, Ecuador
-                                </div>
-                            </div>
-                            <h4>Give Education To Africa</h4>
-                            <p>
-                                Smallest directly families surprise honoured am an. Speaking replying mistress him numerous she returned feelings may day. Evening way luckily son exposed get general greatly. Zealously prevailed be arranging do. Set arranging too dejection september happiness. Understood instrument or do connection no appearance do invitation. Dried quick round it or order. Add past see west felt did any. Say out noise you taste merry plate you share. My resolve arrived is we chamber be removal. 
-                            </p>
-                            <a class="btn circle btn-theme border btn-md" href="#">Donate Now</a>
-                        </div>
-
+            {% if campana %}
+<div class="causes-single-items">
+    <div class="row">
+        <div class="col-lg-8 content">
+            <div class="info">
+                <img src="assets/img/1500x700.png" alt="Thumb">
+                <div class="top-entry">
+                    <div class="date">
+                        <i class="fas fa-clock"></i> <strong>Creado:</strong> {{ campana[5].strftime('%b %d, %Y') }}
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i> <strong>Ubicación:</strong> {{ campana[8] }}
+                    </div>
+                </div>
+                <h4>{{ campana[2] }}</h4>
+                <p>{{ campana[3] }}</p>
+                <a class="btn circle btn-theme border btn-md" href="#">Donate Now</a>
+            </div>
+            <!-- Resto del contenido -->
+        </div>
+        <!-- Sidebar -->
+    </div>
+</div>
+{% else %}
+<p>No se encontró la campaña.</p>
+{% endif %}
                         <div class="comments">
                             <div class="comments-area">
                                 <div class="comments-title">
@@ -261,6 +266,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                #Comentarios
                                 <div class="comments-form">
                                     <div class="title">
                                         <h4>Leave a comments</h4>
