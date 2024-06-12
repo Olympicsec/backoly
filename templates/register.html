@@ -35,8 +35,6 @@
       <script src="assets/js/html5/respond.min.js"></script>
     <![endif]-->
 
-    
-
 </head>
 
 <body>
@@ -45,8 +43,7 @@
     <div class="se-pre-con"></div>
     <!-- Preloader Ends -->
 
- <!-- Start Header Top 
-    ============================================= -->
+    <!-- Start Header Top -->
     <div class="top-bar-area inc-pad bg-dark text-light">
         <div class="container-full">
             <div class="row align-center">
@@ -93,8 +90,7 @@
     </div>
     <!-- End Header Top -->
 
-    <!-- Header 
-    ============================================= -->
+    <!-- Header -->
     <header id="home">
 
         <!-- Start Navigation -->
@@ -149,60 +145,82 @@
     </header>
     <!-- End Header -->
 
-    <!-- Start Login
-    ============================================= -->
-<div class="login-form-area default-padding">
-    <div class="container">
-        <div class="row align-center">
-            <!-- Start Login Form -->
-            <div class="col-lg-7 login-forms">
-                <div class="content">
-                    <div class="heading">
-                        <h3>Iniciar Sesión</h3>
+    <!-- Start Register Form -->
+    <div class="login-form-area default-padding">
+        <div class="container">
+            <div class="row align-center">
+                <!-- Start Register Form -->
+                <div class="col-lg-7 login-forms">
+                    <div class="content">
+                        <div class="heading">
+                            <h3>Registrate</h3>
+                        </div>
+                        <form action="{{ url_for('register') }}" method="POST" class="login-form">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input class="form-control" id="first_name" name="first_name" placeholder="Nombre*" type="text" required>
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input class="form-control" id="last_name" name="last_name" placeholder="Apellido*" type="text" required>
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input class="form-control" id="email" name="email" placeholder="Correo Electrónico*" type="email" required>
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input class="form-control" id="password" name="password" placeholder="Contraseña*" type="password" required>
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input class="form-control" id="birthdate" name="birthdate" placeholder="Fecha de Nacimiento*" type="date" required>
+                                        <span class="alert-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <button type="submit" name="submit" id="submit">
+                                        Registrarse <i class="fa fa-sign-in-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Alert Message -->
+                            <div class="col-md-12 alert-notification">
+                                <div id="message" class="alert-msg"></div>
+                            </div>
+                        </form>
                     </div>
-                    <form action="assets/mail/login.php" method="POST" class="login-form">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <input class="form-control" id="email" name="email" placeholder="Email*" type="email" required>
-                                    <span class="alert-error"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <input class="form-control" id="password" name="password" placeholder="Contraseña*" type="password" required>
-                                    <span class="alert-error"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <button type="submit" name="submit" id="submit">
-                                    Iniciar Sesión <i class="fa fa-sign-in-alt"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- Alert Message -->
-                        <div class="col-md-12 alert-notification">
-                            <div id="message" class="alert-msg"></div>
-                        </div>
-                    </form>
                 </div>
-            </div>
-            <!-- End Login Form -->
-            <div class="col-lg-5 address-info">
-                <div class="address-items">
+                <!-- End Register Form -->
+                <div class="col-lg-5 address-info">
+                    <div class="address-items">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End Login -->
+    <!-- End Register Form -->
 
-<!-- Start Footer 
-    ============================================= -->
+    <!-- Start Footer -->
     <footer class="bg-dark text-light">
         <!-- Fixed Shape -->
         <div class="container">
@@ -210,7 +228,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 item">
                         <div class="f-item about">
-                            <img src="assets/img/logo-light.png" alt="Logo">
+                            <img src="{{ url_for('static', filename='img/logo-light.png') }}" alt="Logo">
             
                         </div>
                     </div>
@@ -253,12 +271,12 @@
                                     <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                                     <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                                 </ul>
-                                </ul>
-                            
                             </div>
                         </div>
                     </div>
-
+                </div>
+            </div>
+        </div>
         <!-- Start Footer Bottom -->
         <div class="footer-bottom">
             <div class="container">
