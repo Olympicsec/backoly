@@ -93,6 +93,7 @@
     </div>
     <!-- End Header Top -->
 
+
     <!-- Header 
     ============================================= -->
     <header id="home">
@@ -105,9 +106,9 @@
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav border-less">
                     <ul>
-                        <li class="button"><a href="#"><i class="fas fa-heart"></i> Donate</a></li>
+                        <li class="button"><a href="#"><i class="fas fa-heart"></i> Donar</a></li>
                     </ul>
-                </div>         
+                </div>        
                 <!-- End Atribute Navigation -->
 
                 <!-- Start Header Navigation -->
@@ -157,118 +158,179 @@
     </header>
     <!-- End Header -->
 
-    <!-- Start Login
+    <!-- Start Breadcrumb 
     ============================================= -->
     <div class="breadcrumb-area text-center shadow dark bg-fixed padding-xl text-light" style="background-image: url(assets/img/2440x1578.png);">
         <div class="container">
             <div class="breadcrumb-items">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2>Contact Us</h2>
+                        <h2>Sobre Nosotros</h2>
                     </div>
                 </div>
                 <ul class="breadcrumb">
                     <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="#">Page</a></li>
-                    <li class="active">Contact</li>
+                    <li class="active">About</li>
                 </ul>
             </div>
         </div>
     </div>
     <!-- End Breadcrumb -->
 
-    <!-- Start Contact 
+    <!-- Star About Area
     ============================================= -->
-    <div class="contact-form-area default-padding">
+    <div class="about-area default-padding">
         <div class="container">
             <div class="row align-center">
-                <!-- Start Contact Form -->
-                <div class="col-lg-7 contact-forms">
-                    <div class="content">
-                        <div class="heading">
-                            <h3>Let’s make the world better, together</h3>
+
+                <div class="col-lg-6">
+                    <div class="thumb">
+                        <img src="{{ url_for('static', filename='img/800x800.png') }}" alt="Thumb">
+                        <div class="overlay">
+                            <h4>More then 365 000+ People Were Helped</h4>
                         </div>
-                        <form action="assets/mail/contact.php" method="POST" class="contact-form">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group comments">
-                                        <textarea class="form-control" id="comments" name="comments" placeholder="Tell Us About Project *"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <button type="submit" name="submit" id="submit">
-                                        Send Message <i class="fa fa-paper-plane"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- Alert Message -->
-                            <div class="col-md-12 alert-notification">
-                                <div id="message" class="alert-msg"></div>
-                            </div>
-                        </form>
                     </div>
                 </div>
-                <!-- End Contact Form -->
-                <div class="col-lg-5 address-info">
-                    <div class="address-items">
-                        <ul>
-                            <li>
-                                <i class="fas fa-map-marker-alt"></i>
-                                <p>
-                                    Our Location
-                                    <span>Alexima, NT 456678</span>
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fas fa-envelope-open"></i>
-                                <p>
-                                    Send Us Mail
-                                    <span>Info@yourdomain.com</span>
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fas fa-mobile-alt"></i>
-                                <p>
-                                    Call Us
-                                    <span>+456 456 4443</span>
-                                </p>
-                            </li>
-                        </ul>
+
+                <div class="col-lg-6 info">
+                    <h5>About Us</h5>
+                    <h2 class="text-blur">About</h2>
+                    <h2 class="area-title">We’re worldwide non-profit charity ogranization.</h2>
+                    <p>
+                        Principles travelling frequently far delightful its especially acceptance. Happiness necessary.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nesciunt ad suscipit iusto dolorum quae recusandae quo illum libero excepturi, provident facere. Delectus possimus cupiditate voluptatum.
+                    </p>
+                    <ul>
+                        <li>
+                            <h5>168K</h5>
+                            <span>Plants Protected</span>
+                        </li>
+                        <li>
+                            <h5>5M Ton </h5>
+                            <span>Water Conserved</span>
+                        </li>
+                        <li>
+                            <h5>37K Sqmi.</h5>
+                            <span>Ocean Proteced</span>
+                        </li>
+                    </ul>
+                    <a class="btn circle btn-theme border btn-md" href="#">become a volunteer</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- End About Area -->
+
+    <!-- Start What We Do 
+    ============================================= -->
+    <div class="we-do-area half-bg default-padding bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h5>What we do</h5>
+                        <h2>
+                           We Donate to charity causes <br> around the world.
+                        </h2>
+                        <div class="heading-divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="wedo-items text-center">
+                <div class="row">
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-3 col-md-6">
+                        <div class="item">
+                            <i class="flaticon-water-bottle"></i>
+                            <h4>Water Delivery</h4>
+                            <p>
+                                Always length letter adieus add number moment she. Promise few compass.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-3 col-md-6">
+                        <div class="item">
+                            <i class="flaticon-pharmacy"></i>
+                            <h4>Medicine Help</h4>
+                            <p>
+                                Always length letter adieus add number moment she. Promise few compass.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-3 col-md-6">
+                        <div class="item">
+                            <i class="flaticon-planet-earth"></i>
+                            <h4>Save Plants</h4>
+                            <p>
+                                Always length letter adieus add number moment she. Promise few compass.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-3 col-md-6">
+                        <div class="item">
+                            <i class="flaticon-home"></i>
+                            <h4>We Build & Create</h4>
+                            <p>
+                                Always length letter adieus add number moment she. Promise few compass.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End What We Do -->
+
+
+    
+    <!-- Start Fun Factor Area
+    ============================================= -->
+    <div class="fun-factor-area bg-gray half-bg default-padding-bottom">
+        <div class="container">
+            <div class="fact-items text-center bg-cover" style="background-image: url(assets/img/2440x1578.png);">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 item">
+                        <div class="fun-fact">
+                            <div class="timer" data-to="28" data-speed="2000">28</div>
+                            <span class="medium">Years of Foundation</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 item">
+                        <div class="fun-fact">
+                            <div class="timer" data-to="780" data-speed="5000">780</div>
+                            <span class="medium">monthly donors</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 item">
+                        <div class="fun-fact">
+                            <div class="timer" data-to="1600" data-speed="5000">1600</div>
+                            <span class="medium">incredible volunteers</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 item">
+                        <div class="fun-fact">
+                            <div class="timer" data-to="688" data-speed="5000">688</div>
+                            <span class="medium">successful campains</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End Login -->
+    <!-- End Fun Factor Area -->
 
-<!-- Start Footer 
+
+        <!-- Start Footer 
     ============================================= -->
     <footer class="bg-dark text-light">
         <!-- Fixed Shape -->
@@ -352,6 +414,7 @@
         <!-- End Footer Bottom -->
     </footer>
     <!-- End Footer -->
+
 
     <!-- jQuery Frameworks -->
     <script src="{{ url_for('static', filename='js/jquery-1.12.4.min.js') }}"></script>

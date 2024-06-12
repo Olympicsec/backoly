@@ -45,7 +45,7 @@
     <div class="se-pre-con"></div>
     <!-- Preloader Ends -->
 
- <!-- Start Header Top 
+    <!-- Start Header Top 
     ============================================= -->
     <div class="top-bar-area inc-pad bg-dark text-light">
         <div class="container-full">
@@ -93,6 +93,7 @@
     </div>
     <!-- End Header Top -->
 
+
     <!-- Header 
     ============================================= -->
     <header id="home">
@@ -105,9 +106,9 @@
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav border-less">
                     <ul>
-                        <li class="button"><a href="#"><i class="fas fa-heart"></i> Donate</a></li>
+                        <li class="button"><a href="#"><i class="fas fa-heart"></i> Donar</a></li>
                     </ul>
-                </div>         
+                </div>        
                 <!-- End Atribute Navigation -->
 
                 <!-- Start Header Navigation -->
@@ -157,118 +158,89 @@
     </header>
     <!-- End Header -->
 
-    <!-- Start Login
+    <!-- Start Breadcrumb 
     ============================================= -->
     <div class="breadcrumb-area text-center shadow dark bg-fixed padding-xl text-light" style="background-image: url(assets/img/2440x1578.png);">
         <div class="container">
             <div class="breadcrumb-items">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2>Contact Us</h2>
+                        <h2>Donations</h2>
                     </div>
                 </div>
                 <ul class="breadcrumb">
-                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="#">Page</a></li>
-                    <li class="active">Contact</li>
+                    <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="#">Donar</a></li>
+                    <li class="active">Campañas</li>
                 </ul>
             </div>
         </div>
     </div>
     <!-- End Breadcrumb -->
 
-    <!-- Start Contact 
+    <!-- Start Causes 
     ============================================= -->
-    <div class="contact-form-area default-padding">
+    <div class="causes-area bg-gray default-padding">
         <div class="container">
-            <div class="row align-center">
-                <!-- Start Contact Form -->
-                <div class="col-lg-7 contact-forms">
-                    <div class="content">
-                        <div class="heading">
-                            <h3>Let’s make the world better, together</h3>
+            <div class="causes-items">
+                <div class="row">
+                    <div class="col-lg-12">
+                        {% for campana in campanas %}
+                        <div class="grid-item">
+                            <div class="row">
+                                <div class="info col-lg-7">
+                                    <div class="top-entry">
+                                        <div class="date">
+                                            <i class="fas fa-clock"></i> <strong>Created:</strong> {{ campana[5].strftime('%b %d, %Y') }}
+                                        </div>
+                                        <div class="location">
+                                            <i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> {{ campana[7] }}
+                                        </div>
+                                    </div>
+                                    <h3>
+                                        <a href="#">{{ campana[2] }}</a>
+                                    </h3>
+                                    <p>{{ campana[4] }}</p>
+                                    <div class="progress-box">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" data-width="33">
+                                                <span>33%</span>
+                                            </div>
+                                        </div>
+                                        <p>Raised: $0 <span>Goal: ${{ campana[5] }}</span></p>
+                                    </div>
+                                    <a class="btn circle btn-theme border btn-md" href="#">Donate Now</a>
+                                </div>
+                            </div>
                         </div>
-                        <form action="assets/mail/contact.php" method="POST" class="contact-form">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group comments">
-                                        <textarea class="form-control" id="comments" name="comments" placeholder="Tell Us About Project *"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <button type="submit" name="submit" id="submit">
-                                        Send Message <i class="fa fa-paper-plane"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- Alert Message -->
-                            <div class="col-md-12 alert-notification">
-                                <div id="message" class="alert-msg"></div>
-                            </div>
-                        </form>
+                        {% endfor %}
+    
+                        
                     </div>
-                </div>
-                <!-- End Contact Form -->
-                <div class="col-lg-5 address-info">
-                    <div class="address-items">
-                        <ul>
-                            <li>
-                                <i class="fas fa-map-marker-alt"></i>
-                                <p>
-                                    Our Location
-                                    <span>Alexima, NT 456678</span>
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fas fa-envelope-open"></i>
-                                <p>
-                                    Send Us Mail
-                                    <span>Info@yourdomain.com</span>
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fas fa-mobile-alt"></i>
-                                <p>
-                                    Call Us
-                                    <span>+456 456 4443</span>
-                                </p>
-                            </li>
-                        </ul>
+                    <!-- Paginatin -->
+                    <div class="donation-pagi text-center col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <nav aria-label="navigation">
+                                    <ul class="pagination">
+                                        <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
+                    <!-- End Paginatin -->
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End Login -->
+    <!-- End Causes -->
 
-<!-- Start Footer 
+    <!-- Start Footer 
     ============================================= -->
     <footer class="bg-dark text-light">
         <!-- Fixed Shape -->
@@ -321,7 +293,6 @@
                                     <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                                 </ul>
                                 </ul>
-                            
                             </div>
                         </div>
                     </div>
@@ -352,6 +323,7 @@
         <!-- End Footer Bottom -->
     </footer>
     <!-- End Footer -->
+
 
     <!-- jQuery Frameworks -->
     <script src="{{ url_for('static', filename='js/jquery-1.12.4.min.js') }}"></script>
